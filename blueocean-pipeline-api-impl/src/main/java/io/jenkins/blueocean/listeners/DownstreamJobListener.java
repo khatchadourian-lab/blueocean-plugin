@@ -35,7 +35,7 @@ public class DownstreamJobListener extends RunListener<Run<?, ?>> {
                 FlowNode node;
 
                 if (execution == null) {
-                    LOGGER.warning("Could not retrieve upstream FlowExecution");
+                    LOGGER.finest("Could not retrieve upstream FlowExecution");
                     continue;
                 }
 
@@ -47,7 +47,7 @@ public class DownstreamJobListener extends RunListener<Run<?, ?>> {
                 }
 
                 if (node == null) {
-                    LOGGER.warning("Could not retrieve upstream node (null)");
+                    LOGGER.finest("Could not retrieve upstream node (null)");
                     continue;
                 }
 
